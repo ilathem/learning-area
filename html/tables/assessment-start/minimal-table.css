@@ -30,6 +30,22 @@ tr:nth-child(odd) td {
   background-color: rgb(245,245,245);
 }
 
+thead>tr>:nth-child(2) {
+  border-top: 2px solid black;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+}
+
+tbody>tr>td:first-of-type {
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+}
+
+tbody>tr:last-child>td:first-of-type {
+  border-bottom: 2px solid black; 
+}
+
+
 caption {
   padding: 10px;
 }
