@@ -21,18 +21,25 @@
   </head>
 
 
-<body>
+  <body>
     <form>
-      <label for="choose">Would you prefer a banana or a cherry?</label>
-      <input pattern="[Bb]anana|[Cc]herry" required id="choose" name="i_like">
+      <label 
+        for="choose"
+      >Would you prefer a banana, cherry, apple, or orange?</label>
+      <input 
+        pattern="[Bb]anana|[Cc]herry|[Aa]pple|[Oo]range" 
+        required 
+        id="choose" 
+        name="i_like"
+      >
       <button>Submit</button>
     </form>
 
-  <script>
-    document.querySelector('button').addEventListener('click', (e) => {
-      e.preventDefault();
-    })
-  </script>
-</body>
+    <script>
+      document.querySelector('button').addEventListener('click', (e) => {
+        e.preventDefault();
+      })
+    </script>
+  </body>
 
 </html>
